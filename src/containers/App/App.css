@@ -1,0 +1,13 @@
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+body{
+  text-align: center;
+}
+
+#dev{
+	font-size: 10pt;
+	padding-top: 45px;
+}

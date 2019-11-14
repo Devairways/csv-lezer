@@ -1,0 +1,31 @@
+#header{
+	background: #008b8b;
+    color: white;
+}
+#intro{
+	color: #008b8b;
+	width: 60%;
+	margin: 30px auto;
+}
+
+table{
+	width: 100%;
+	margin: auto;
+	padding-bottom: 40px;
+}
+
+th{
+	padding: 10px;
+	cursor: pointer;
+}
+th:hover{
+	background:#006d6d;
+}
+
+td{
+	padding: 10px 15px;
+}
+
+tr:nth-of-type(even){
+	background-color: lightgrey;
+}
