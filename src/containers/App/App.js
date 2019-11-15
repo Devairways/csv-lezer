@@ -6,6 +6,7 @@ import './App.css';
 function App() {
   const [header, setHeader] = useState([])
   const [body, setBody] = useState([])
+  const [tableHead, setTableHead] = useState(0)
   const [isLoading, setIsloading] = useState(false)
 
   const splitCsv = (data) =>{
@@ -15,19 +16,24 @@ function App() {
     setHeader(top)
     setIsloading(false) 
   }
-
   const sorteer = (index=0,lijst) =>{
     const sortering = lijst.map((arr)=>arr)
-    sortering.sort((a, b) => {
-    if (a[index] < b[index]) {
-      return -1;
+    if (index === tableHead){
+      setBody(sortering.reverse());
     }
-    else if (a[index] > b[index]) {
-      return 1;
-    }
+    else{
+      sortering.sort((a, b) => {
+      if (a[index] < b[index]) {
+        return -1;
+      }
+      else if (a[index] > b[index]) {
+        return 1;
+      }
     return 0;
     });
     setBody(sortering)
+    setTableHead(index)
+    }
   }
 
   let content

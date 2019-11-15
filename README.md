@@ -1,6 +1,6 @@
 CSV-LEZER,
 
-tool ontwikkel voor het uitlezen van csv-bestanden.
+tool ontwikkeld voor het uitlezen van csv-bestanden.
 
 Geschreven in React(React Hooks).
 
